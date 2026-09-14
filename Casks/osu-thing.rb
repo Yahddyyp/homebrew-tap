@@ -8,5 +8,7 @@ cask "osu-thing" do
   desc "Absolute-position trackpad driver for osu!"
   homepage "https://github.com/Yahddyyp/osu-thing"
 
+  depends_on arch: :arm64
+
   app "osu-thing.app"
 end
