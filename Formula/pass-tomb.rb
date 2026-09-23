@@ -1,14 +1,13 @@
 class PassTomb < Formula
-  desc "The pass-tomb extension for macOS"
+  desc "Pass extension for macOS"
   homepage "https://github.com/Yahddyyp/pass-tomb-osx"
-  version "1.0.0"
   url "https://github.com/Yahddyyp/pass-tomb-osx.git",
-    tag: "v#{version}"
+    tag: "v1.0.0"
   license "MIT"
   head "https://github.com/Yahddyyp/pass-tomb-osx.git", branch: "main"
 
-  depends_on "gnupg"
   depends_on "rust" => :build
+  depends_on "gnupg"
   depends_on "pass"
 
   def install
