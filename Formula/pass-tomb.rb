@@ -8,8 +8,8 @@ class PassTomb < Formula
   head "https://github.com/Yahddyyp/pass-tomb-osx.git", branch: "main"
 
   depends_on "gnupg"
-  depends_on "pass"
   depends_on "rust" => :build
+  depends_on "pass"
 
   def install
     system "cargo", "install", *std_cargo_args
