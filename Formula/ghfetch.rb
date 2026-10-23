@@ -9,6 +9,6 @@ class Ghfetch < Formula
   end
 
   test do
-    assert_match "1.0.1", shell_output("#{bin}/ghfetch --version")
+    assert_match "1.0.0", shell_output("#{bin}/ghfetch --version")
   end
 end
