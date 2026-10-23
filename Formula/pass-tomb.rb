@@ -14,17 +14,6 @@ class PassTomb < Formula
 
   def install
     bin.install "pass-tomb", "pass-open", "pass-close", "pass-timer"
-
-    (share/"pass-extensions").mkpath
-
-    %w[tomb open close timer].each do |cmd|
-      (share/"pass-extensions/#{cmd}.bash").write <<~EOS
-        #!/bin/bash
-        exec "#{bin}/pass-#{cmd}" "$@"
-      EOS
-
-      chmod 0755, share/"pass-extensions/#{cmd}.bash"
-    end
   end
 
   test do
