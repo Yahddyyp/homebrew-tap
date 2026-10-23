@@ -8,7 +8,6 @@ class PassTomb < Formula
     url "https://github.com/Yahddyyp/pass-tomb-osx/releases/download/v1.5.0/pass-tomb-v1.5.0-x86_64-apple-darwin.tar.gz"
     sha256 "9aa3e2272506c7b7a09197a7521e91240afeb18fc7bf1b5aa0510981a06da28a"
   end
-  license "MIT"
 
   depends_on :macos
   depends_on "pass"
