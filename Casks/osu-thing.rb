@@ -1,8 +1,8 @@
 cask "osu-thing" do
-  version "0.1.0"
-  sha256 "420e940d3c2ee5b883e8e94fe98c519de1d76bad66ca2338445410105f8e86af"
+  version "0.2.0"
+  sha256 "c6aceea62205f2e02dd459c61f3c890786b5793ec89c58680ff3b1c730dfb747"
 
-  url "https://github.com/Yahddyyp/osu-thing/releases/download/v#{version}/osu-thing.zip"
+  url "https://github.com/Yahddyyp/osu-thing/releases/download/v#{version}/osu-thing-v#{version}.zip"
   name "osu! Trackpad Driver"
   desc "Absolute-position trackpad driver for osu!"
   homepage "https://github.com/Yahddyyp/osu-thing"
